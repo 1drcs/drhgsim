@@ -11,8 +11,8 @@
     "build": "vite build",
     "watch": "vite build --watch",
     "dev": "vite",
-    "serve:firefox": "web-ext run --start-url \"https://devrant.com/feed/top\"  --source-dir ./dist/",
-    "serve:chrome": "web-ext run -t chromium --start-url \"https://devrant.com/feed/top\" --source-dir ./dist/",
+    "serve:firefox": "dotenv -c -- web-ext run",
+    "serve:chrome": "dotenv -c -- web-ext run -t chromium",
     "check": "svelte-check --tsconfig ./tsconfig.json"
   },
   "dependencies": {
@@ -23,6 +23,7 @@
     "@sveltejs/vite-plugin-svelte": "^1.0.0-next.41",
     "@tsconfig/svelte": "^2.0.1",
     "@types/webextension-polyfill": "^0.8.3",
+    "dotenv-cli": "^5.1.0",
     "svelte": "^3.44.0",
     "svelte-check": "^2.2.7",
     "svelte-preprocess": "^4.9.8",
