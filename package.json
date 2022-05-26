@@ -1,10 +1,10 @@
 {
   "name": "drhgsim",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "displayName": "dR Hunger Games Simulator",
   "description": "Web extension for simulation of brawls between devRant users, inspired by Hunger Games.",
   "private": true,
-  "license": "WTFPL",
+  "license": "MIT",
   "author": "Rodion Borisov <vintprox@gmail.com>",
   "type": "module",
   "scripts": {
